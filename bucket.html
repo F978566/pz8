@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen w-screen">
+    <div class="bg-gray-50 min-h-screen font-sans text-gray-800">
+        <nav class="bg-gray-100 border-b border-gray-200 py-2 text-xs text-gray-600">
+            <div class="container mx-auto flex items-center justify-between px-4">
+                <a href="./index.html" class="flex flex-row">
+                    <!-- <a href="./index.html"> -->
+                    <img src="./assets/icons/leaf-svgrepo-com.svg" alt="logo" class="w-[32px] h-[32px]"/>
+                    <h4 class="text-2xl font-black text-gray-900 tracking-tight">EcoShop</h4>
+                    <!-- </a> -->
+                </a>
+                <div class="flex gap-6">
+                    <a href="./about.html" class="hover:text-green-600">О нас</a>
+                    <a href="./bucket.html" class="hover:text-green-600">Корзина</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto px-4 py-12">
+            <h1 class="text-4xl font-black uppercase mb-10 tracking-tighter">Ваша корзина</h1>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                        
+                        <div class="hidden md:grid grid-cols-12 text-xs font-bold uppercase text-gray-400 pb-4 border-b border-gray-100 mb-6">
+                            <div class="col-span-6">Товар</div>
+                            <div class="col-span-3 text-center">Количество</div>
+                            <div class="col-span-3 text-right">Стоимость</div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 py-4 border-b border-gray-50 last:border-0">
+                            <div class="col-span-6 flex items-center gap-4">
+                                <div class="w-20 h-20 bg-gray-50 rounded-lg flex-shrink-0">
+                                    <img src="./assets/images/cherry.png" alt="Клубника" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900">Вишня</h3>
+                                    <p class="text-sm text-gray-400">200 г</p>
+                                </div>
+                            </div>
+                            <div class="col-span-3 flex justify-center">
+                                <div class="flex items-center border border-gray-200 rounded-lg bg-gray-50">
+                                    <button class="px-3 py-1 text-xl font-bold hover:text-green-600">-</button>
+                                    <span class="px-4 font-bold">2</span>
+                                    <button class="px-3 py-1 text-xl font-bold hover:text-green-600">+</button>
+                                </div>
+                            </div>
+                            <div class="col-span-3 text-right">
+                                <span class="text-xl font-black">590 ₽</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-4 py-4 border-b border-gray-50 last:border-0">
+                            <div class="col-span-6 flex items-center gap-4">
+                                <div class="w-20 h-20 bg-gray-50 rounded-lg flex-shrink-0">
+                                    <img src="./assets/images/chiken.png" alt="Авокадо" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900">Курица</h3>
+                                    <p class="text-sm text-gray-400">2 шт</p>
+                                </div>
+                            </div>
+                            <div class="col-span-3 flex justify-center">
+                                <div class="flex items-center border border-gray-200 rounded-lg bg-gray-50">
+                                    <button class="px-3 py-1 text-xl font-bold hover:text-green-600">-</button>
+                                    <span class="px-4 font-bold">1</span>
+                                    <button class="px-3 py-1 text-xl font-bold hover:text-green-600">+</button>
+                                </div>
+                            </div>
+                            <div class="col-span-3 text-right">
+                                <span class="text-xl font-black">525 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center px-6 py-4 bg-green-50 rounded-xl text-green-800">
+                        <span class="text-sm font-medium">Бесплатная доставка от 3000 ₽</span>
+                        <span class="text-sm">До бесплатной доставки: 1 885 ₽</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
+                        <h2 class="text-xl font-black uppercase mb-6">Оформление</h2>
+                        
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-400 mb-1 ml-1">Номер телефона</label>
+                                <input type="tel" placeholder="+7 (___) ___-__-__" class="w-full bg-gray-50 border-gray-100 border rounded-xl py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none transition-all">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-400 mb-1 ml-1">ФИО</label>
+                                <input type="tel" placeholder="ФИО" class="w-full bg-gray-50 border-gray-100 border rounded-xl py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none transition-all">
+                            </div>
+                            
+                            
+                            <div class="flex flex-col gap-[8px]">
+                                <label class="block text-xs font-bold uppercase text-gray-400 mb-1 ml-1">Адрес доставки</label>
+                                <input rows="3" placeholder="Улица" class="w-full bg-gray-50 border-gray-100 border rounded-xl py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none transition-all" />
+                                <input rows="3" placeholder="Дом, корпус, строение" class="w-full bg-gray-50 border-gray-100 border rounded-xl py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none transition-all" />
+                                <input rows="3" placeholder="Квартира / Офис" class="w-full bg-gray-50 border-gray-100 border rounded-xl py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none transition-all" />
+                            </div>
+
+                            <div class="pt-4 border-t border-gray-100 mt-6">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-500">Товары (3)</span>
+                                    <span class="font-bold">1 115 ₽</span>
+                                </div>
+                                <div class="flex justify-between mb-6 text-gray-500">
+                                    <span>Доставка</span>
+                                    <span>250 ₽</span>
+                                </div>
+                                <div class="flex justify-between items-end mb-8">
+                                    <span class="text-lg font-bold">Итого</span>
+                                    <span class="text-3xl font-black text-green-600">1 365 ₽</span>
+                                </div>
+
+                                <button type="submit" class="w-full bg-green-400 hover:bg-green-500 text-gray-900 py-4 rounded-xl font-black uppercase transition-all shadow-lg active:scale-95">
+                                    <a href="./index.html">Заказать сейчас</a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <p class="text-[10px] text-gray-400 text-center px-4 leading-relaxed">
+                        Нажимая кнопку «Заказать сейчас», вы соглашаетесь с условиями публичной оферты и обработки персональных данных.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mb-12">
+            
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-2xl font-black text-gray-900 tracking-tight">EcoShop</h2>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                    Ваш надежный партнер в мире свежих и натуральных продуктов прямо к вашему порогу.
+                    </p>
+                </div>
+
+                <div class="md:col-span-1 text-right">
+                    <h4 class="font-bold text-gray-900 mb-4 uppercase text-xs tracking-widest">Контакты</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-lg font-black text-gray-900 leading-none">8 (888) 888-88-88</p>
+                            <p class="text-xs text-gray-500 mt-1">Ежедневно с 8:00 до 23:00</p>
+                        </div>
+                        <div>
+                            <p class="text-lg font-black text-gray-900 leading-none">email@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</html>

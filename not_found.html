@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen w-screen">
+    <div class="bg-gray-50 min-h-screen font-sans text-gray-800">
+        <nav class="bg-gray-100 border-b border-gray-200 py-2 text-xs text-gray-600">
+            <div class="container mx-auto flex items-center justify-between px-4">
+                <a href="./index.html" class="flex flex-row">
+                    <!-- <a href="./index.html"> -->
+                    <img src="./assets/icons/leaf-svgrepo-com.svg" alt="logo" class="w-[32px] h-[32px]"/>
+                    <h4 class="text-2xl font-black text-gray-900 tracking-tight">EcoShop</h4>
+                    <!-- </a> -->
+                </a>
+                <div class="flex gap-6">
+                    <a href="./about.html" class="hover:text-green-600">О нас</a>
+                    <a href="./bucket.html" class="hover:text-green-600">Корзина</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="min-h-screen flex items-center justify-center px-4 py-12">
+            <div class="max-w-xl w-full text-center">
+                
+                <div class="relative mb-10">
+                    <h1 class="text-[150px] md:text-[200px] font-black text-gray-100 leading-none select-none">404</h1>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1576675443493-274e9282531e?auto=format&fit=crop&q=80&w=300" 
+                            alt="Empty basket" 
+                            class="w-40 h-40 md:w-56 md:h-56 object-contain rotate-12 drop-shadow-2xl">
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-black uppercase tracking-tight text-gray-900">Ой! Похоже, здесь пусто</h2>
+                    <p class="text-gray-500 text-lg max-w-sm mx-auto">
+                        Страница, которую вы ищете, затерялась в лесу или никогда не существовала.
+                    </p>
+                </div>
+
+                <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="/" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-xl font-black uppercase transition-all shadow-lg active:scale-95">
+                        На главную
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mb-12">
+            
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-2xl font-black text-gray-900 tracking-tight">EcoShop</h2>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                    Ваш надежный партнер в мире свежих и натуральных продуктов прямо к вашему порогу.
+                    </p>
+                </div>
+
+                <div class="md:col-span-1 text-right">
+                    <h4 class="font-bold text-gray-900 mb-4 uppercase text-xs tracking-widest">Контакты</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-lg font-black text-gray-900 leading-none">8 (888) 888-88-88</p>
+                            <p class="text-xs text-gray-500 mt-1">Ежедневно с 8:00 до 23:00</p>
+                        </div>
+                        <div>
+                            <p class="text-lg font-black text-gray-900 leading-none">email@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</html>

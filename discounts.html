@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen w-screen">
+    <div class="bg-gray-50 min-h-screen font-sans text-gray-800">
+        <nav class="bg-gray-100 border-b border-gray-200 py-2 text-xs text-gray-600">
+            <div class="container mx-auto flex items-center justify-between px-4">
+                <a href="./index.html" class="flex flex-row">
+                    <!-- <a href="./index.html"> -->
+                    <img src="./assets/icons/leaf-svgrepo-com.svg" alt="logo" class="w-[32px] h-[32px]"/>
+                    <h4 class="text-2xl font-black text-gray-900 tracking-tight">EcoShop</h4>
+                    <!-- </a> -->
+                </a>
+                <div class="flex gap-6">
+                    <a href="./about.html" class="hover:text-green-600">О нас</a>
+                    <a href="./bucket.html" class="hover:text-green-600">Корзина</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto px-4 py-4 flex items-center gap-8">
+        
+            <div class="flex-1 relative">
+                <input type="text" placeholder="Поиск по товарам" class="w-full bg-gray-100 border-none rounded-md py-2 px-4 focus:ring-2 focus:ring-green-500">
+                <svg class="w-5 h-5 absolute right-3 top-2.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+        </div>
+
+        <main class="container mx-auto px-4 py-6">
+            <div class="flex flex-row justify-center relative w-full py-8">
+                <div class="place-self-center flex items-start gap-4 overflow-x-auto no-scrollbar px-4">
+                    
+                    <div class="flex flex-col items-center min-w-[100px] cursor-pointer group">
+                        <a href="./popular.html">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-gray-200 transition-colors">
+                                <img src="./assets/icons/star-svgrepo-com.svg" alt="star" class="p-[10px]"/>
+                            </div>
+                        </a>
+                        <span class="text-xs font-medium text-center text-gray-800 leading-tight">Популярное</span>
+                    </div>
+
+                    <div class="flex flex-col items-center min-w-[100px] cursor-pointer group">
+                        <a href="./discounts.html">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-gray-200 transition-colors">
+                                <span class="text-2xl font-bold text-gray-700">%</span>
+                            </div>
+                        </a>
+                        <span class="text-xs font-medium text-center text-gray-800 leading-tight">Скидки</span>
+                    </div>
+                    <div class="flex flex-col items-center min-w-[100px] cursor-pointer group">
+                        <a href="./fruits.html">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-gray-200 transition-colors">
+                                <img src="./assets/icons/juice-vegan-vegetarian-svgrepo-com.svg" alt="star" class=" p-[10px]"/>
+                            </div>
+                        </a>
+                        <span class="text-xs font-medium text-center text-gray-800 leading-tight">Фрукты, Зелень, овощи и ягоды</span>
+                    </div>
+                    <div class="flex flex-col items-center min-w-[100px] cursor-pointer group">
+                        <a href="./meat.html">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-gray-200 transition-colors">
+                                <img src="./assets/icons/meat-steak-svgrepo-com.svg" alt="star" class=" p-[10px]"/>
+                            </div>
+                        </a>
+                        <span class="text-xs font-medium text-center text-gray-800 leading-tight">Мясо, птица и рыба</span>
+                    </div>
+                    <div class="flex flex-col items-center min-w-[100px] cursor-pointer group">
+                        <a href="./bakery.html">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-gray-200 transition-colors">
+                                <img src="./assets/icons/bakery-croissant-svgrepo-com.svg" alt="star" class=" p-[10px]"/>
+                            </div>
+                        </a>
+                        <span class="text-xs font-medium text-center text-gray-800 leading-tight">Выпечка</span>
+                    </div>
+                    <div class="flex flex-col items-center min-w-[100px] cursor-pointer group">
+                        <a href="./milk.html">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-gray-200 transition-colors">
+                                <img src="./assets/icons/milk-illustration-1-svgrepo-com.svg" alt="star" class=" p-[10px]"/>
+                            </div>
+                        </a>
+                        <span class="text-xs font-medium text-center text-gray-800 leading-tight">Молочные продукты</span>
+                    </div>
+                    <div class="flex flex-col items-center min-w-[100px] cursor-pointer group">
+                        <a href="./drinks.html">
+                            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-3 group-hover:bg-gray-200 transition-colors">
+                                <img src="./assets/icons/drink-685-svgrepo-com.svg" alt="star" class=" p-[10px]"/>
+                            </div>
+                        </a>
+                        <span class="text-xs font-medium text-center text-gray-800 leading-tight">Напитки</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="mt-10">
+
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-xl font-black uppercase tracking-wide">Скидки</h3>
+                </div>
+    
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-transparent hover:border-green-200 transition-all flex flex-col justify-between">
+                        <div>
+                            <img src="./assets/images/cherry.png" class="w-full aspect-square object-contain mb-4">
+                            <h4 class="text-sm font-semibold mb-1">Вишня</h4>
+                            <p class="text-xs text-gray-400">200 г</p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="text-xs text-red-500 line-through">300 ₽ -30%</span>
+                            <button class="w-full py-2 mt-1 bg-gray-50 border border-gray-200 rounded-lg font-bold text-sm hover:bg-white">210 ₽</button>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-transparent hover:border-green-200 transition-all flex flex-col justify-between">
+                        <div>
+                            <img src="./assets/images/cherry.png" class="w-full aspect-square object-contain mb-4">
+                            <h4 class="text-sm font-semibold mb-1">Вишня</h4>
+                            <p class="text-xs text-gray-400">200 г</p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="text-xs text-red-500 line-through">300 ₽ -30%</span>
+                            <button class="w-full py-2 mt-1 bg-gray-50 border border-gray-200 rounded-lg font-bold text-sm hover:bg-white">210 ₽</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-transparent hover:border-green-200 transition-all flex flex-col justify-between">
+                        <div>
+                            <img src="./assets/images/cherry.png" class="w-full aspect-square object-contain mb-4">
+                            <h4 class="text-sm font-semibold mb-1">Вишня</h4>
+                            <p class="text-xs text-gray-400">200 г</p>
+                        </div>
+                        <div class="mt-4">
+                            <span class="text-xs text-red-500 line-through">300 ₽ -30%</span>
+                            <button class="w-full py-2 mt-1 bg-gray-50 border border-gray-200 rounded-lg font-bold text-sm hover:bg-white">210 ₽</button>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mb-12">
+            
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-2xl font-black text-gray-900 tracking-tight">EcoShop</h2>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                    Ваш надежный партнер в мире свежих и натуральных продуктов прямо к вашему порогу.
+                    </p>
+                </div>
+
+                <div class="md:col-span-1 text-right">
+                    <h4 class="font-bold text-gray-900 mb-4 uppercase text-xs tracking-widest">Контакты</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-lg font-black text-gray-900 leading-none">8 (888) 888-88-88</p>
+                            <p class="text-xs text-gray-500 mt-1">Ежедневно с 8:00 до 23:00</p>
+                        </div>
+                        <div>
+                            <p class="text-lg font-black text-gray-900 leading-none">email@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</html>
